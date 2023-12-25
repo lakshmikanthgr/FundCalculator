@@ -26,4 +26,5 @@ def stats(current_month, bid_value, interest_rate):
 # Main Execution
 if __name__ == "__main__":
     # Validating input values
+    interest_rate = interest_rate/100
     stats(currentMonth, bid_value, interest_rate)

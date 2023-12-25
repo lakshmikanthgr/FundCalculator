@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <p>Current Month: {{ current_month }}</p>
+    <p>Commission: {{ commission }}</p>
+    <p>Monthly Payment: {{ monthly_payment }}</p>
+    <p>Interest for each coming month:</p>
+    <ul>
+        {% for month, interest in interests %}
+        <li>Month {{ month }}: {{ interest }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
